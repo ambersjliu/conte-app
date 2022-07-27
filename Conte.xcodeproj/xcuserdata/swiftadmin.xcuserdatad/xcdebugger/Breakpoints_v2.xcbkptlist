@@ -18,6 +18,68 @@
             endingLineNumber = "11"
             landmarkName = "AppDelegate"
             landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "66319C7F-8EA9-46F3-AF9B-EB4B3DDE014B - 1a8fc98b09ed618d"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Conte.AppDelegate.__allocating_init() -&gt; Conte.AppDelegate"
+                  moduleName = "Conte"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/swiftadmin/Documents/swiftPractice/Conte/Conte/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "12">
+               </Location>
+               <Location
+                  uuid = "66319C7F-8EA9-46F3-AF9B-EB4B3DDE014B - 855d87c56beb3cfa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Conte.AppDelegate.init() -&gt; Conte.AppDelegate"
+                  moduleName = "Conte"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/swiftadmin/Documents/swiftPractice/Conte/Conte/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "84">
+               </Location>
+               <Location
+                  uuid = "66319C7F-8EA9-46F3-AF9B-EB4B3DDE014B - db3c5fa7876e4092"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Conte.AppDelegate.__deallocating_deinit"
+                  moduleName = "Conte"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/swiftadmin/Documents/swiftPractice/Conte/Conte/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "0">
+               </Location>
+               <Location
+                  uuid = "66319C7F-8EA9-46F3-AF9B-EB4B3DDE014B - 93e7624b26344c12"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "main"
+                  moduleName = "Conte"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/swiftadmin/Documents/swiftPractice/Conte/Conte/AppDelegate.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "11"
+                  endingLineNumber = "11"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

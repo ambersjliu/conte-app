@@ -66,7 +66,7 @@
                                     <action selector="newPromptPressed:" destination="4Gj-V7-iVt" eventType="touchUpInside" id="u0G-zc-jav"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mve-iI-BVs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="mve-iI-BVs">
                                 <rect key="frame" x="34" y="179" width="323" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -159,7 +159,11 @@
                         <viewLayoutGuide key="safeArea" id="gYp-4o-wLz"/>
                         <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Home" id="n73-yK-Xhe"/>
+                    <navigationItem key="navigationItem" title="Home" id="n73-yK-Xhe">
+                        <barButtonItem key="leftBarButtonItem" image="line.3.horizontal" catalog="system" id="3WO-s9-Lor">
+                            <color key="tintColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="adder" destination="A8T-bc-W1D" id="jpc-mx-ocA"/>
                         <outlet property="challengesBg" destination="AjA-KX-nQM" id="RFN-HI-eXo"/>
@@ -172,15 +176,15 @@
             </objects>
             <point key="canvasLocation" x="172.30769230769229" y="91.706161137440759"/>
         </scene>
-        <!--View Controller-->
+        <!--Challenge Controller-->
         <scene sceneID="YJe-xz-WF8">
             <objects>
-                <viewController id="Cyj-Eh-oyW" sceneMemberID="viewController">
+                <viewController id="Cyj-Eh-oyW" customClass="challengeController" customModule="Conte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zoo-Qd-YdY">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-Jr-7jB">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="L7d-Jr-7jB">
                                 <rect key="frame" x="34" y="183" width="323" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -195,6 +199,7 @@
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
+                                    <action selector="newChallengePressed:" destination="Cyj-Eh-oyW" eventType="touchUpInside" id="Nhu-KF-qoo"/>
                                     <action selector="newPromptPressed:" destination="4Gj-V7-iVt" eventType="touchUpInside" id="6hx-dz-gMH"/>
                                 </connections>
                             </button>
@@ -204,10 +209,13 @@
                         <color key="tintColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="D4S-7W-JCG"/>
+                    <connections>
+                        <outlet property="challengeLabel" destination="L7d-Jr-7jB" id="AzT-fV-DS1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rar-bl-S2Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-758.46153846153845" y="803.3175355450237"/>
+            <point key="canvasLocation" x="-757" y="825"/>
         </scene>
         <!--Palette-->
         <scene sceneID="tne-QT-ifu">
@@ -361,12 +369,13 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="HdH-fv-EkR"/>
+        <segue reference="tJc-zf-zux"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="holo1" width="2400" height="1698"/>
         <image name="holo2" width="2400" height="3600"/>
+        <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
         <image name="output-onlinepngtools (1)" width="75" height="75"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <image name="smallholo3" width="289" height="164"/>
