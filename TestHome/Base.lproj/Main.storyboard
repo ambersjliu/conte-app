@@ -18,13 +18,23 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omy-aH-950">
-                                <rect key="frame" x="59" y="162" width="273" height="154"/>
+                                <rect key="frame" x="59" y="208" width="273" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="general prompts"/>
+                                <buttonConfiguration key="configuration" style="filled" title="GENERAL PROMPTS">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <segue destination="4Gj-V7-iVt" kind="show" id="Hf1-ZB-Hob"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sd6-rc-3Gh">
+                                <rect key="frame" x="59" y="476" width="273" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="CHARACTER PROMPTS">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="30"/>
+                                </buttonConfiguration>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="NcW-f3-Wd8"/>
@@ -55,7 +65,7 @@
                                     <action selector="newPromptPressed:" destination="4Gj-V7-iVt" eventType="touchUpInside" id="u0G-zc-jav"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mve-iI-BVs">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mve-iI-BVs">
                                 <rect key="frame" x="34" y="179" width="323" height="203"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
@@ -91,6 +101,10 @@
                                 <rect key="frame" x="51" y="340" width="289" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="holo3" translatesAutoresizingMaskIntoConstraints="NO" id="6vT-Af-VLf">
+                                <rect key="frame" x="51" y="569" width="289" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-eB-3lM">
                                 <rect key="frame" x="51" y="108" width="289" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -99,7 +113,7 @@
                                     <backgroundConfiguration key="background">
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
-                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -111,20 +125,32 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="PALETTES">
-                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="wV2-1s-dg9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h4d-1s-cfM">
+                                <rect key="frame" x="51" y="569" width="289" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="CHALLENGES">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="40"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Xau-18-VlM" kind="show" id="96e-TC-75Q"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8T-bc-W1D">
-                                <rect key="frame" x="272" y="685" width="68" height="68"/>
+                                <rect key="frame" x="306" y="710" width="68" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="">
                                     <imageReference key="image" image="pencil" catalog="system" symbolScale="large"/>
-                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="black"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="23" scale="large" weight="black"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                             </button>
@@ -135,6 +161,7 @@
                     <navigationItem key="navigationItem" title="Home" id="n73-yK-Xhe"/>
                     <connections>
                         <outlet property="adder" destination="A8T-bc-W1D" id="jpc-mx-ocA"/>
+                        <outlet property="challengesBg" destination="6vT-Af-VLf" id="5hU-Lj-l7h"/>
                         <outlet property="header" destination="n73-yK-Xhe" id="bKS-Re-uCB"/>
                         <outlet property="palettesBg" destination="COu-t8-A9W" id="2Mo-WN-bb7"/>
                         <outlet property="promptsBg" destination="o7d-wL-GIm" id="bx1-52-ixA"/>
@@ -251,7 +278,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7692307692307" y="91.706161137440759"/>
+            <point key="canvasLocation" x="1568" y="92"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gpt-en-LCB">
@@ -294,6 +321,22 @@
             </objects>
             <point key="canvasLocation" x="150.76923076923077" y="-601.42180094786727"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="AmT-sD-45a">
+            <objects>
+                <viewController id="Xau-18-VlM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="G73-xm-gi7">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6zB-9p-qph"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sZH-H3-1Rn"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R67-Bh-TRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-757" y="832"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="HdH-fv-EkR"/>
@@ -302,6 +345,7 @@
     <resources>
         <image name="holo1" width="2400" height="1698"/>
         <image name="holo2" width="2400" height="3600"/>
+        <image name="holo3" width="2400" height="1600"/>
         <image name="output-onlinepngtools (1)" width="75" height="75"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
