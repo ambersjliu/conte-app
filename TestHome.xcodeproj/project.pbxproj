@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A5A3FE42891D4CF0070E267 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5A3FE32891D4CF0070E267 /* ChallengeController.swift */; };
 		4ADAF471288ECFC000A3B5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAF470288ECFC000A3B5DB /* AppDelegate.swift */; };
 		4ADAF473288ECFC000A3B5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAF472288ECFC000A3B5DB /* SceneDelegate.swift */; };
 		4ADAF475288ECFC000A3B5DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAF474288ECFC000A3B5DB /* ViewController.swift */; };
 		4ADAF47A288ECFC200A3B5DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAF479288ECFC200A3B5DB /* Assets.xcassets */; };
 		4ADAF47D288ECFC200A3B5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAF47B288ECFC200A3B5DB /* LaunchScreen.storyboard */; };
 		4ADAF485288EEF9B00A3B5DB /* HexCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAF484288EEF9B00A3B5DB /* HexCode.swift */; };
-		4AEEA24C288F02AF007BB9C2 /* ColorViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEA24B288F02AF007BB9C2 /* ColorViewStruct.swift */; };
 		4AEEA24F288F1883007BB9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAF476288ECFC000A3B5DB /* Main.storyboard */; };
 		4AEEA2542890E36E007BB9C2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEA2532890E36E007BB9C2 /* HomeController.swift */; };
 		4AEEA2562890E9FD007BB9C2 /* english-nouns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AEEA2552890E9FD007BB9C2 /* english-nouns.txt */; };
@@ -23,6 +23,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A5A3FE32891D4CF0070E267 /* ChallengeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeController.swift; sourceTree = "<group>"; };
 		4ADAF46D288ECFC000A3B5DB /* TestHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADAF470288ECFC000A3B5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4ADAF472288ECFC000A3B5DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,7 +33,6 @@
 		4ADAF47C288ECFC200A3B5DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4ADAF47E288ECFC200A3B5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ADAF484288EEF9B00A3B5DB /* HexCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexCode.swift; sourceTree = "<group>"; };
-		4AEEA24B288F02AF007BB9C2 /* ColorViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewStruct.swift; sourceTree = "<group>"; };
 		4AEEA2532890E36E007BB9C2 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		4AEEA2552890E9FD007BB9C2 /* english-nouns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "english-nouns.txt"; sourceTree = "<group>"; };
 		4AEEA2572890EFF4007BB9C2 /* PromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptController.swift; sourceTree = "<group>"; };
@@ -77,12 +77,12 @@
 				4ADAF474288ECFC000A3B5DB /* ViewController.swift */,
 				4AEEA2572890EFF4007BB9C2 /* PromptController.swift */,
 				4AEEA2532890E36E007BB9C2 /* HomeController.swift */,
+				4A5A3FE32891D4CF0070E267 /* ChallengeController.swift */,
 				4ADAF476288ECFC000A3B5DB /* Main.storyboard */,
 				4ADAF479288ECFC200A3B5DB /* Assets.xcassets */,
 				4ADAF47B288ECFC200A3B5DB /* LaunchScreen.storyboard */,
 				4ADAF47E288ECFC200A3B5DB /* Info.plist */,
 				4AEEA25D289184D8007BB9C2 /* File.txt */,
-				4AEEA24B288F02AF007BB9C2 /* ColorViewStruct.swift */,
 				4AEEA2552890E9FD007BB9C2 /* english-nouns.txt */,
 			);
 			path = TestHome;
@@ -161,13 +161,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4AEEA24C288F02AF007BB9C2 /* ColorViewStruct.swift in Sources */,
 				4ADAF485288EEF9B00A3B5DB /* HexCode.swift in Sources */,
 				4AEEA2542890E36E007BB9C2 /* HomeController.swift in Sources */,
 				4ADAF475288ECFC000A3B5DB /* ViewController.swift in Sources */,
 				4AEEA25A28917DBC007BB9C2 /* StringExtension.swift in Sources */,
 				4ADAF471288ECFC000A3B5DB /* AppDelegate.swift in Sources */,
 				4AEEA2582890EFF4007BB9C2 /* PromptController.swift in Sources */,
+				4A5A3FE42891D4CF0070E267 /* ChallengeController.swift in Sources */,
 				4ADAF473288ECFC000A3B5DB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

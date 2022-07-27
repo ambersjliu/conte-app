@@ -12,7 +12,6 @@ class HomeController:UIViewController{
     
     
     @IBOutlet weak var promptsBg: UIImageView!
-    @IBOutlet weak var header: UINavigationItem!
     @IBOutlet weak var adder: UIButton!
 
     @IBOutlet weak var challengesBg: UIImageView!
