@@ -15,8 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="New Project (1)" translatesAutoresizingMaskIntoConstraints="NO" id="4Lv-6e-LtD">
-                                <rect key="frame" x="20" y="352" width="374" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CONTE LOGO FINAL" translatesAutoresizingMaskIntoConstraints="NO" id="TFc-qK-Eaj">
+                                <rect key="frame" x="20" y="388" width="364" height="103"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -30,6 +30,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="New Project (1)" width="973" height="531"/>
+        <image name="CONTE LOGO FINAL" width="884" height="294"/>
     </resources>
 </document>

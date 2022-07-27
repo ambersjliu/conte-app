@@ -14,9 +14,8 @@
 		4ADAF47D288ECFC200A3B5DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAF47B288ECFC200A3B5DB /* LaunchScreen.storyboard */; };
 		4ADAF485288EEF9B00A3B5DB /* HexCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAF484288EEF9B00A3B5DB /* HexCode.swift */; };
 		4AEEA24C288F02AF007BB9C2 /* ColorViewStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEA24B288F02AF007BB9C2 /* ColorViewStruct.swift */; };
-		4AEEA24E288F184B007BB9C2 /* GenPrompts.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEEA24D288F184B007BB9C2 /* GenPrompts.storyboard */; };
 		4AEEA24F288F1883007BB9C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4ADAF476288ECFC000A3B5DB /* Main.storyboard */; };
-		4AEEA252288F9DAF007BB9C2 /* Palette.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AEEA250288F9DAF007BB9C2 /* Palette.storyboard */; };
+		4AEEA2542890E36E007BB9C2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEA2532890E36E007BB9C2 /* HomeController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +29,7 @@
 		4ADAF47E288ECFC200A3B5DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4ADAF484288EEF9B00A3B5DB /* HexCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexCode.swift; sourceTree = "<group>"; };
 		4AEEA24B288F02AF007BB9C2 /* ColorViewStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorViewStruct.swift; sourceTree = "<group>"; };
-		4AEEA24D288F184B007BB9C2 /* GenPrompts.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GenPrompts.storyboard; sourceTree = "<group>"; };
-		4AEEA251288F9DAF007BB9C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = TestHome/Base.lproj/Palette.storyboard; sourceTree = "<group>"; };
+		4AEEA2532890E36E007BB9C2 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,9 +66,8 @@
 				4ADAF484288EEF9B00A3B5DB /* HexCode.swift */,
 				4ADAF472288ECFC000A3B5DB /* SceneDelegate.swift */,
 				4ADAF474288ECFC000A3B5DB /* ViewController.swift */,
-				4AEEA250288F9DAF007BB9C2 /* Palette.storyboard */,
+				4AEEA2532890E36E007BB9C2 /* HomeController.swift */,
 				4ADAF476288ECFC000A3B5DB /* Main.storyboard */,
-				4AEEA24D288F184B007BB9C2 /* GenPrompts.storyboard */,
 				4ADAF479288ECFC200A3B5DB /* Assets.xcassets */,
 				4ADAF47B288ECFC200A3B5DB /* LaunchScreen.storyboard */,
 				4ADAF47E288ECFC200A3B5DB /* Info.plist */,
@@ -138,9 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4ADAF47D288ECFC200A3B5DB /* LaunchScreen.storyboard in Resources */,
-				4AEEA252288F9DAF007BB9C2 /* Palette.storyboard in Resources */,
 				4ADAF47A288ECFC200A3B5DB /* Assets.xcassets in Resources */,
-				4AEEA24E288F184B007BB9C2 /* GenPrompts.storyboard in Resources */,
 				4AEEA24F288F1883007BB9C2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +149,7 @@
 			files = (
 				4AEEA24C288F02AF007BB9C2 /* ColorViewStruct.swift in Sources */,
 				4ADAF485288EEF9B00A3B5DB /* HexCode.swift in Sources */,
+				4AEEA2542890E36E007BB9C2 /* HomeController.swift in Sources */,
 				4ADAF475288ECFC000A3B5DB /* ViewController.swift in Sources */,
 				4ADAF471288ECFC000A3B5DB /* AppDelegate.swift in Sources */,
 				4ADAF473288ECFC000A3B5DB /* SceneDelegate.swift in Sources */,
@@ -177,14 +173,6 @@
 				4ADAF47C288ECFC200A3B5DB /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		4AEEA250288F9DAF007BB9C2 /* Palette.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4AEEA251288F9DAF007BB9C2 /* Base */,
-			);
-			name = Palette.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
