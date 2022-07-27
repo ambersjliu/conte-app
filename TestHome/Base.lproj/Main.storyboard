@@ -44,13 +44,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mve-iI-BVs">
-                                <rect key="frame" x="51" y="270" width="289" height="111"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XZ-ZN-Qey">
                                 <rect key="frame" x="124" y="464" width="143" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -58,12 +51,25 @@
                                 <buttonConfiguration key="configuration" style="filled" title="New Prompt">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="newPromptPressed:" destination="4Gj-V7-iVt" eventType="touchUpInside" id="u0G-zc-jav"/>
+                                </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" minimumFontSize="10" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mve-iI-BVs">
+                                <rect key="frame" x="34" y="179" width="323" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="urM-dk-84p"/>
                         <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="VPF-AK-jlX"/>
+                    <connections>
+                        <outlet property="promptLabel" destination="mve-iI-BVs" id="WzM-YF-gPN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXj-9y-bdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -77,19 +83,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="holo1" translatesAutoresizingMaskIntoConstraints="NO" id="o7d-wL-GIm">
+                                <rect key="frame" x="51" y="108" width="289" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="holo2" translatesAutoresizingMaskIntoConstraints="NO" id="COu-t8-A9W">
+                                <rect key="frame" x="51" y="340" width="289" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g5c-eB-3lM">
                                 <rect key="frame" x="51" y="108" width="289" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="PALETTES">
+                                <buttonConfiguration key="configuration" style="plain" title="PROMPTS">
                                     <backgroundConfiguration key="background">
-                                        <color key="backgroundColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </backgroundConfiguration>
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="Wwd-sA-Qba"/>
+                                    <segue destination="Wzu-CC-cpp" kind="show" id="HdH-fv-EkR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j38-o5-esz">
+                                <rect key="frame" x="51" y="340" width="289" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PALETTES">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="wV2-1s-dg9"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8T-bc-W1D">
@@ -102,17 +128,6 @@
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j38-o5-esz">
-                                <rect key="frame" x="51" y="340" width="289" height="164"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="PROMPTS">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="Wzu-CC-cpp" kind="show" id="o8y-fm-Zob"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gYp-4o-wLz"/>
                         <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -121,6 +136,8 @@
                     <connections>
                         <outlet property="adder" destination="A8T-bc-W1D" id="jpc-mx-ocA"/>
                         <outlet property="header" destination="n73-yK-Xhe" id="bKS-Re-uCB"/>
+                        <outlet property="palettesBg" destination="COu-t8-A9W" id="2Mo-WN-bb7"/>
+                        <outlet property="promptsBg" destination="o7d-wL-GIm" id="bx1-52-ixA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfJ-5I-bNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -279,10 +296,12 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="o8y-fm-Zob"/>
+        <segue reference="HdH-fv-EkR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
+        <image name="holo1" width="2400" height="1698"/>
+        <image name="holo2" width="2400" height="3600"/>
         <image name="output-onlinepngtools (1)" width="75" height="75"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">

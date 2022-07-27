@@ -18,6 +18,8 @@
 		4AEEA2542890E36E007BB9C2 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEA2532890E36E007BB9C2 /* HomeController.swift */; };
 		4AEEA2562890E9FD007BB9C2 /* english-nouns.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AEEA2552890E9FD007BB9C2 /* english-nouns.txt */; };
 		4AEEA2582890EFF4007BB9C2 /* PromptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEA2572890EFF4007BB9C2 /* PromptController.swift */; };
+		4AEEA25A28917DBC007BB9C2 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEA25928917DBC007BB9C2 /* StringExtension.swift */; };
+		4AEEA25E289184D8007BB9C2 /* File.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4AEEA25D289184D8007BB9C2 /* File.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		4AEEA2532890E36E007BB9C2 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		4AEEA2552890E9FD007BB9C2 /* english-nouns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "english-nouns.txt"; sourceTree = "<group>"; };
 		4AEEA2572890EFF4007BB9C2 /* PromptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptController.swift; sourceTree = "<group>"; };
+		4AEEA25928917DBC007BB9C2 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		4AEEA25D289184D8007BB9C2 /* File.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 			children = (
 				4ADAF470288ECFC000A3B5DB /* AppDelegate.swift */,
 				4ADAF484288EEF9B00A3B5DB /* HexCode.swift */,
+				4AEEA25928917DBC007BB9C2 /* StringExtension.swift */,
 				4ADAF472288ECFC000A3B5DB /* SceneDelegate.swift */,
 				4ADAF474288ECFC000A3B5DB /* ViewController.swift */,
 				4AEEA2572890EFF4007BB9C2 /* PromptController.swift */,
@@ -76,6 +81,7 @@
 				4ADAF479288ECFC200A3B5DB /* Assets.xcassets */,
 				4ADAF47B288ECFC200A3B5DB /* LaunchScreen.storyboard */,
 				4ADAF47E288ECFC200A3B5DB /* Info.plist */,
+				4AEEA25D289184D8007BB9C2 /* File.txt */,
 				4AEEA24B288F02AF007BB9C2 /* ColorViewStruct.swift */,
 				4AEEA2552890E9FD007BB9C2 /* english-nouns.txt */,
 			);
@@ -140,6 +146,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AEEA25E289184D8007BB9C2 /* File.txt in Resources */,
 				4ADAF47D288ECFC200A3B5DB /* LaunchScreen.storyboard in Resources */,
 				4AEEA2562890E9FD007BB9C2 /* english-nouns.txt in Resources */,
 				4ADAF47A288ECFC200A3B5DB /* Assets.xcassets in Resources */,
@@ -158,6 +165,7 @@
 				4ADAF485288EEF9B00A3B5DB /* HexCode.swift in Sources */,
 				4AEEA2542890E36E007BB9C2 /* HomeController.swift in Sources */,
 				4ADAF475288ECFC000A3B5DB /* ViewController.swift in Sources */,
+				4AEEA25A28917DBC007BB9C2 /* StringExtension.swift in Sources */,
 				4ADAF471288ECFC000A3B5DB /* AppDelegate.swift in Sources */,
 				4AEEA2582890EFF4007BB9C2 /* PromptController.swift in Sources */,
 				4ADAF473288ECFC000A3B5DB /* SceneDelegate.swift in Sources */,
