@@ -9,5 +9,7 @@ import Foundation
 import UIKit
 
 class challengeController:UIViewController{
-    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+    }
 }
