@@ -3,15 +3,76 @@
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Prompts-->
+        <scene sceneID="HNg-Pm-tbK">
+            <objects>
+                <viewController id="Wzu-CC-cpp" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fQT-PO-cP5">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omy-aH-950">
+                                <rect key="frame" x="59" y="162" width="273" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="general prompts"/>
+                                <connections>
+                                    <segue destination="4Gj-V7-iVt" kind="show" id="Hf1-ZB-Hob"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="NcW-f3-Wd8"/>
+                        <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Prompts" id="Lr7-jI-j2j"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xtq-CN-mUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1080" y="-601.42180094786727"/>
+        </scene>
+        <!--Prompt Controller-->
+        <scene sceneID="dSh-2k-KO2">
+            <objects>
+                <viewController id="4Gj-V7-iVt" customClass="PromptController" customModule="TestHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c6O-S2-nKf">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mve-iI-BVs">
+                                <rect key="frame" x="51" y="270" width="289" height="111"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8XZ-ZN-Qey">
+                                <rect key="frame" x="124" y="464" width="143" height="63"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="New Prompt">
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="urM-dk-84p"/>
+                        <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VPF-AK-jlX"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MXj-9y-bdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2067.6923076923076" y="-711.61137440758296"/>
+        </scene>
+        <!--Home-->
         <scene sceneID="Knj-N8-EGu">
             <objects>
-                <viewController id="HDh-mt-eVg" sceneMemberID="viewController">
+                <viewController title="Home" id="HDh-mt-eVg" customClass="HomeController" customModule="TestHome" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vyv-h9-55u">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,28 +81,57 @@
                                 <rect key="frame" x="51" y="108" width="289" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="PALETTE">
+                                <buttonConfiguration key="configuration" style="plain" title="PALETTES">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    </backgroundConfiguration>
+                                    <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="50"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="Wwd-sA-Qba"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8T-bc-W1D">
+                                <rect key="frame" x="272" y="685" width="68" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="">
+                                    <imageReference key="image" image="pencil" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" scale="large" weight="black"/>
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j38-o5-esz">
+                                <rect key="frame" x="51" y="340" width="289" height="164"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PROMPTS">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="50"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="A95-Ja-0gD"/>
+                                    <segue destination="Wzu-CC-cpp" kind="show" id="o8y-fm-Zob"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gYp-4o-wLz"/>
                         <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="n73-yK-Xhe"/>
+                    <navigationItem key="navigationItem" title="Home" id="n73-yK-Xhe"/>
+                    <connections>
+                        <outlet property="adder" destination="A8T-bc-W1D" id="jpc-mx-ocA"/>
+                        <outlet property="header" destination="n73-yK-Xhe" id="bKS-Re-uCB"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UfJ-5I-bNQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="172.30769230769229" y="91.706161137440759"/>
         </scene>
-        <!--View Controller-->
+        <!--Palette-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestHome" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleAspectFill" id="8bC-Xf-vdC">
+                <viewController title="Palette" id="BYZ-38-t0r" customClass="ViewController" customModule="TestHome" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -154,6 +244,10 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="13g-Ls-6F7">
                         <rect key="frame" x="0.0" y="44" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="20"/>
+                            <color key="textColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -164,10 +258,33 @@
             </objects>
             <point key="canvasLocation" x="-756.92307692307691" y="91.706161137440759"/>
         </scene>
+        <!--Prompts-->
+        <scene sceneID="Lsa-Jr-Y9Y">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vWd-uW-URb" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Prompts" id="M8q-wW-RV6"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="iLK-VI-HYK">
+                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Wzu-CC-cpp" kind="relationship" relationship="rootViewController" id="tJc-zf-zux"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nmY-vC-eoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150.76923076923077" y="-601.42180094786727"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="o8y-fm-Zob"/>
+    </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
         <image name="output-onlinepngtools (1)" width="75" height="75"/>
+        <image name="pencil" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
