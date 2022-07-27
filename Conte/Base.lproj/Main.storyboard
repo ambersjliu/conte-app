@@ -12,26 +12,36 @@
         <!--Prompts-->
         <scene sceneID="HNg-Pm-tbK">
             <objects>
-                <viewController id="Wzu-CC-cpp" sceneMemberID="viewController">
+                <viewController id="Wzu-CC-cpp" customClass="PromptsHomeController" customModule="Conte" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fQT-PO-cP5">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="martin-de-arriba-0c_w3_hfEco-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="WHa-X3-eln">
+                                <rect key="frame" x="59" y="219" width="273" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.75" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="martin-de-arriba-MJjEAWTg7eM-unsplash" translatesAutoresizingMaskIntoConstraints="NO" id="RA9-YX-sB4">
+                                <rect key="frame" x="59" y="477" width="273" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aCs-ob-9yV">
                                 <rect key="frame" x="59" y="477" width="273" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="CHARACTER PROMPTS" titleAlignment="center">
+                                <buttonConfiguration key="configuration" style="plain" title="CHARACTER PROMPTS" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="-16"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="omy-aH-950">
                                 <rect key="frame" x="59" y="219" width="273" height="154"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="GENERAL PROMPTS" titleAlignment="center">
+                                <buttonConfiguration key="configuration" style="plain" title="GENERAL PROMPTS" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" name="Futura-Medium" family="Futura" pointSize="35"/>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="4Gj-V7-iVt" kind="show" id="Hf1-ZB-Hob"/>
@@ -42,12 +52,16 @@
                         <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" title="Prompts" id="Lr7-jI-j2j"/>
+                    <connections>
+                        <outlet property="charPromptsBg" destination="RA9-YX-sB4" id="D0l-D4-ytw"/>
+                        <outlet property="genpromptsBg" destination="WHa-X3-eln" id="pHd-Pw-9kH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xtq-CN-mUn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1080" y="-601.42180094786727"/>
         </scene>
-        <!--Prompt Controller-->
+        <!--General Prompts-->
         <scene sceneID="dSh-2k-KO2">
             <objects>
                 <viewController id="4Gj-V7-iVt" customClass="PromptController" customModule="Conte" customModuleProvider="target" sceneMemberID="viewController">
@@ -73,18 +87,26 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PM9-gV-8MZ">
+                                <rect key="frame" x="301" y="97" width="63" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="urM-dk-84p"/>
                         <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="VPF-AK-jlX"/>
+                    <navigationItem key="navigationItem" title="General Prompts" id="VPF-AK-jlX"/>
                     <connections>
                         <outlet property="promptLabel" destination="mve-iI-BVs" id="WzM-YF-gPN"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MXj-9y-bdv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2067.6923076923076" y="-711.61137440758296"/>
+            <point key="canvasLocation" x="1915" y="-868"/>
         </scene>
         <!--Home-->
         <scene sceneID="Knj-N8-EGu">
@@ -154,6 +176,9 @@
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="23" scale="large" weight="black"/>
                                     <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
                                 </buttonConfiguration>
+                                <connections>
+                                    <segue destination="Sce-Ak-8uQ" kind="show" id="y7b-J5-PfE"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="gYp-4o-wLz"/>
@@ -176,7 +201,7 @@
             </objects>
             <point key="canvasLocation" x="172.30769230769229" y="91.706161137440759"/>
         </scene>
-        <!--Challenge Controller-->
+        <!--Challenges-->
         <scene sceneID="YJe-xz-WF8">
             <objects>
                 <viewController id="Cyj-Eh-oyW" customClass="challengeController" customModule="Conte" customModuleProvider="target" sceneMemberID="viewController">
@@ -203,12 +228,20 @@
                                     <action selector="newPromptPressed:" destination="4Gj-V7-iVt" eventType="touchUpInside" id="6hx-dz-gMH"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eGw-Do-KHE">
+                                <rect key="frame" x="294" y="97" width="63" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="heart" catalog="system">
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="25"/>
+                                </buttonConfiguration>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="O2R-8M-1eH"/>
                         <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="D4S-7W-JCG"/>
+                    <navigationItem key="navigationItem" title="Challenges" id="D4S-7W-JCG"/>
                     <connections>
                         <outlet property="challengeLabel" destination="L7d-Jr-7jB" id="AzT-fV-DS1"/>
                     </connections>
@@ -296,19 +329,46 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ax-mk-eSY">
-                                <rect key="frame" x="146" y="726" width="99" height="89"/>
+                                <rect key="frame" x="158" y="746" width="77" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="output-onlinepngtools (1)" title=""/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="arrow.triangle.2.circlepath" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="newPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="o9P-o4-R2s"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="baF-m2-d6l">
+                                <rect key="frame" x="300" y="746" width="71" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="suit.heart" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="newPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Jw-cX-U4A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCg-32-jW5">
+                                <rect key="frame" x="18" y="746" width="67" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="">
+                                    <imageReference key="image" image="square.and.arrow.down" catalog="system" symbolScale="large"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="30"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="newPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zr8-BG-Tqb"/>
                                 </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.15159818008266007" green="0.14907119784149683" blue="0.19493765782828287" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
-                    <navigationItem key="navigationItem" id="oYg-i9-aTm"/>
+                    <navigationItem key="navigationItem" title="Palette Generator" id="oYg-i9-aTm"/>
                     <connections>
                         <outlet property="light1" destination="K2Y-DA-bli" id="cU7-BM-xRi"/>
                         <outlet property="light2" destination="n75-xS-UNi" id="E6S-q2-W7P"/>
@@ -324,7 +384,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1050.7692307692307" y="91.706161137440759"/>
+            <point key="canvasLocation" x="1274" y="255"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="gpt-en-LCB">
@@ -365,20 +425,79 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nmY-vC-eoL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="150.76923076923077" y="-601.42180094786727"/>
+            <point key="canvasLocation" x="1051" y="-1359"/>
+        </scene>
+        <!--Image Select-->
+        <scene sceneID="ZNr-YB-UIZ">
+            <objects>
+                <viewController title="Image Select" id="Sce-Ak-8uQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fur-ke-fnR">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="photogallery" translatesAutoresizingMaskIntoConstraints="NO" id="mfM-rU-D0i">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iPO-A2-xbM"/>
+                        <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Image Select" id="JJe-4P-uXq">
+                        <barButtonItem key="rightBarButtonItem" title="Next" id="rUg-3g-Xyj">
+                            <connections>
+                                <segue destination="E6y-pC-ggZ" kind="show" id="i23-V4-Vpl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PyH-PG-fK3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="220" y="941.94312796208521"/>
+        </scene>
+        <!--Add Date-->
+        <scene sceneID="2Pj-wk-yEV">
+            <objects>
+                <viewController id="E6y-pC-ggZ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VOA-Sb-3zl">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="wrn-EV-D68">
+                                <rect key="frame" x="0.0" y="88" width="390" height="722"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="TCP-4D-IkY"/>
+                        <color key="backgroundColor" red="0.15159818010000001" green="0.1490711978" blue="0.1949376578" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Add Date" id="bfA-lo-aGc">
+                        <barButtonItem key="rightBarButtonItem" title="Done" id="P1Q-4L-SRM"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EIH-Ow-r5a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="970.76923076923072" y="941.94312796208521"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tJc-zf-zux"/>
+        <segue reference="HdH-fv-EkR"/>
     </inferredMetricsTieBreakers>
     <color key="tintColor" red="0.77529918689999999" green="0.70093292019999998" blue="0.86666673419999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
     <resources>
+        <image name="arrow.triangle.2.circlepath" catalog="system" width="128" height="101"/>
+        <image name="calendar" width="437" height="800"/>
+        <image name="heart" catalog="system" width="128" height="109"/>
         <image name="holo1" width="2400" height="1698"/>
         <image name="holo2" width="2400" height="3600"/>
         <image name="line.3.horizontal" catalog="system" width="128" height="64"/>
-        <image name="output-onlinepngtools (1)" width="75" height="75"/>
+        <image name="martin-de-arriba-0c_w3_hfEco-unsplash" width="2400" height="3600"/>
+        <image name="martin-de-arriba-MJjEAWTg7eM-unsplash" width="2400" height="3600"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
+        <image name="photogallery" width="446" height="820"/>
         <image name="smallholo3" width="289" height="164"/>
+        <image name="square.and.arrow.down" catalog="system" width="121" height="128"/>
+        <image name="suit.heart" catalog="system" width="128" height="109"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
