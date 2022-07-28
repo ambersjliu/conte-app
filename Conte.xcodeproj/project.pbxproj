@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4A37CE012891F63E00BF080F /* PromptsHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37CE002891F63E00BF080F /* PromptsHomeController.swift */; };
+		4A37CE03289248F700BF080F /* CharPromptsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A37CE02289248F700BF080F /* CharPromptsController.swift */; };
 		4A5A3FE42891D4CF0070E267 /* ChallengeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A5A3FE32891D4CF0070E267 /* ChallengeController.swift */; };
 		4ADAF471288ECFC000A3B5DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAF470288ECFC000A3B5DB /* AppDelegate.swift */; };
 		4ADAF473288ECFC000A3B5DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ADAF472288ECFC000A3B5DB /* SceneDelegate.swift */; };
@@ -23,6 +24,7 @@
 
 /* Begin PBXFileReference section */
 		4A37CE002891F63E00BF080F /* PromptsHomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptsHomeController.swift; sourceTree = "<group>"; };
+		4A37CE02289248F700BF080F /* CharPromptsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharPromptsController.swift; sourceTree = "<group>"; };
 		4A5A3FE32891D4CF0070E267 /* ChallengeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallengeController.swift; sourceTree = "<group>"; };
 		4ADAF46D288ECFC000A3B5DB /* Conte.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Conte.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4ADAF470288ECFC000A3B5DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				4AEEA2532890E36E007BB9C2 /* HomeController.swift */,
 				4A5A3FE32891D4CF0070E267 /* ChallengeController.swift */,
 				4A37CE002891F63E00BF080F /* PromptsHomeController.swift */,
+				4A37CE02289248F700BF080F /* CharPromptsController.swift */,
 				4ADAF476288ECFC000A3B5DB /* Main.storyboard */,
 				4ADAF479288ECFC200A3B5DB /* Assets.xcassets */,
 				4ADAF47B288ECFC200A3B5DB /* LaunchScreen.storyboard */,
@@ -161,6 +164,7 @@
 				4AEEA2542890E36E007BB9C2 /* HomeController.swift in Sources */,
 				4ADAF475288ECFC000A3B5DB /* ViewController.swift in Sources */,
 				4AEEA25A28917DBC007BB9C2 /* StringExtension.swift in Sources */,
+				4A37CE03289248F700BF080F /* CharPromptsController.swift in Sources */,
 				4ADAF471288ECFC000A3B5DB /* AppDelegate.swift in Sources */,
 				4AEEA2582890EFF4007BB9C2 /* PromptController.swift in Sources */,
 				4A5A3FE42891D4CF0070E267 /* ChallengeController.swift in Sources */,
