@@ -16,7 +16,7 @@ class CharPromptsController:UIViewController{
     @IBOutlet weak var promptButton: UIButton!
     @IBOutlet weak var promptLabel: UILabel!
     
-    let promptList = ["CHARA giving CHARB a tattoo", "CHARA grading CHARB's homework", "CHARB baking a gingerbread man shaped like CHARA", "CHARB dressing CHARA's wounds", "CHARB offering CHARA an umbrella", "CHARA kissing CHARB on the hand", "CHARA and CHARB in your favourite fairy tale setting", "CHARA and CHARB as childhood friends", "CHARA and CHARB in an orchestra", "CHARA and CHARB as animals", "CHARA giving CHARB chemical burn", "CHARB as CHARA's bodyguard"]
+    let promptList = ["CHARA giving CHARB a tattoo", "CHARA grading CHARB's homework", "CHARB baking a gingerbread man shaped like CHARA", "CHARB dressing CHARA's wounds", "CHARB offering CHARA an umbrella", "CHARA kissing CHARB on the hand", "CHARA and CHARB in your favourite fairy tale setting", "CHARA and CHARB as childhood friends", "CHARA and CHARB in an orchestra", "CHARA and CHARB as animals", "CHARA giving CHARB chemical burn", "CHARB as CHARA's bodyguard", "CHARB is a fugitive and CHARA is a vigilante", "CHARA karate-chopping CHARB for being clingy", "CHARA is a moth and CHARB is a lamp"]
     
     var charA = "CHARA"
     var charB = "CHARB"
